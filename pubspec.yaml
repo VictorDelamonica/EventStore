@@ -1,4 +1,4 @@
-name: event_store
+name: monikode_event_store
 description: "A util to log event into Firebase Firestore"
 repository: https://github.com/VictorDelamonica/EventStore
 homepage: https://www.monikode.com

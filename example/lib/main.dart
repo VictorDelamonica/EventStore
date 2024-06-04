@@ -1,5 +1,5 @@
-import 'package:event_store/event_store.dart';
 import 'package:flutter/material.dart';
+import 'package:monikode_event_store/event_store.dart';
 
 void main() {
   runApp(const MyApp());

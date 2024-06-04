@@ -9,7 +9,7 @@ This is a simple event store that can be used to store events and retrieve them.
 To install the event store, you can use the following command:
 
 ```bash
-flutter pub add event_store
+flutter pub add monikode_event_store
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ To use the event store, you need to import the class in your file:
 
 ```dart
 
-import 'package:event_store/event_store.dart';
+import 'package:monikode_event_store/monikode_event_store.dart';
 
 ```
 

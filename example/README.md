@@ -1,6 +1,6 @@
-# event_store_example
+# monikode_event_store_example
 
-Demonstrates how to use the event_store plugin.
+Demonstrates how to use the monikode_event_store plugin.
 
 ## Getting Started
 
