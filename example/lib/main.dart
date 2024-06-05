@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:monikode_event_store/event_store.dart';
+import 'package:monikode_event_store/monikode_event_store.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final _eventStorePlugin = EventStore();
+  final _eventStorePlugin = EventStore.getInstance();
 
   @override
   void initState() {

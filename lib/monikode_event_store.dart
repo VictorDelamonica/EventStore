@@ -12,13 +12,19 @@ class EventStore {
   late EventLogger eventLogger;
   late LocalEventLogger localEventStore;
 
-  EventStore({String? collectionName}) {
+  static final EventStore _instance = EventStore._internal();
+
+  EventStore._internal({String? collectionName}) {
     localEventStore = LocalEventLogger(
         collectionName: collectionName ?? defaultCollectionName);
     eventLogger = EventLogger(
       collectionName: collectionName ?? defaultCollectionName,
       localLogger: localEventStore,
     );
+  }
+
+  static EventStore getInstance({String? collectionName}) {
+    return _instance;
   }
 }
 

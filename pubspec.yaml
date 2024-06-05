@@ -2,7 +2,7 @@ name: monikode_event_store
 description: "A util to log event into Firebase Firestore"
 repository: https://github.com/VictorDelamonica/EventStore
 homepage: https://www.monikode.com
-version: 0.0.1
+version: 1.0.0
 
 environment:
   sdk: '>=3.3.1 <4.0.0'
