@@ -2,7 +2,8 @@
 
 ## Description
 
-This is a simple event store that can be used to store events and retrieve them.
+This is a singleton service to log event into a Firebase Firestore database. Can also log events
+locally into the console with different log levels(debug, info, warning, error, trace).
 
 ## Installation
 
@@ -22,19 +23,15 @@ import 'package:monikode_event_store/monikode_event_store.dart';
 
 ```
 
-Then, you need to create an instance of the class:
-
-```dart
-
-EventStore store = EventStore();
-
-```
-
 You can also use the following methods:
 
 ```dart
 
-store.eventLogger.logEvent("login", EventLevel.info, {
+var instance = EventStore.getInstance();
+instance.eventLogger.logEvent
+("login
+"
+, EventLevel.info, {
     "custom_parameter": "custom_value",
 });
     
