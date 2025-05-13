@@ -99,6 +99,7 @@ class LocalEventLogger {
   /// * **[eventName]** is the name of the event.
   /// * **[level]** is the level of the event. (info, warning, error, trace, debug)
   /// * **[parameters]** is a map containing the parameters of the event.
+  /// * **[userId]** is the UID of the user. (default is "user_id")
   ///
   /// Example:
   /// ```dart
@@ -108,16 +109,16 @@ class LocalEventLogger {
   /// ```
   ///
   /// The event will be stored in the 'logs' collection with the following fields:
-  /// * **user_id**: The UID of the current user.
+  /// * **user_id**: The UID of the current user or the one past in parameter.
   /// * **email**: The email of the current user.
   /// * **level**: The level of the event.
   /// * **event**: The name of the event.
   /// * **timestamp**: The timestamp of the event.
   /// * **custom_parameter**: The custom value of the event.
-  void log(
-      String eventName, EventLevel level, Map<String, dynamic> parameters) {
+  void log(String eventName, EventLevel level, Map<String, dynamic> parameters,
+      {String userId = "user_id"}) {
     debugPrint(
-        "{\"@t\": ${DateTime.now()}, \"@u\": \"user_id\", \"@e\": \"user_email\", \"@l\": \"${level.toString().split('.').last}\", \"@c\": \"$_collectionName\", \"@n\": \"$eventName\", \"@p\": \"$parameters\"}");
+        "{\"@t\": ${DateTime.now().toUtc()}, \"@u\": \"$userId\", \"@e\": \"user_email\", \"@l\": \"${level.toString().split('.').last}\", \"@c\": \"$_collectionName\", \"@n\": \"$eventName\", \"@p\": \"$parameters\"}");
   }
 }
 
