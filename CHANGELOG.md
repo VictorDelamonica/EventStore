@@ -1,3 +1,7 @@
+## 1.0.3
+
+* Update local `log`.
+
 ## 1.0.2
 
 * Update dependencies versions.
