@@ -1,3 +1,17 @@
+## 2.2.1
+
+### Dependency Updates
+* **Updated `cloud_firestore`** from ^5.6.5 to ^6.1.0
+* **Updated `firebase_auth`** from ^5.5.1 to ^6.1.2
+* **Updated `firebase_core`** from 3.12.1 to 4.2.1 (transitive)
+* **Updated `flutter_lints`** from ^3.0.0 to ^6.0.0
+* **Updated `plugin_platform_interface`** from ^2.0.1 to ^2.1.8
+
+### Testing
+* All 23 tests passing ✅
+* No breaking changes
+* Fully compatible with latest Firebase SDK
+
 ## 2.2.0
 
 ### Major New Features 🎉
