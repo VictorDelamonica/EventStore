@@ -10,10 +10,10 @@
 .svn/
 migrate_working_dir/
 
-# All .md files except README.md
+# All .md files except README.md and CHANGELOG.md
 *.md
 !README.md
-
+!CHANGELOG.md
 # IntelliJ related
 *.iml
 *.ipr
