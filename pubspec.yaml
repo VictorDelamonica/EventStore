@@ -1,8 +1,8 @@
 name: monikode_event_store
-description: "A singleton service to log event into a Firebase Firestore database. Can also log events locally into the console with different log levels(debug, info, warning, error, trace)."
+description: "A singleton service to log events into a Firebase Firestore database. Can also log events locally into the console with different log levels (debug, info, warning, error, trace)."
 repository: https://github.com/VictorDelamonica/EventStore
 homepage: https://www.monikode.com
-version: 1.0.3
+version: 2.2.0
 
 environment:
   sdk: '>=3.3.1 <4.0.0'
@@ -11,7 +11,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  firebase_database: ^11.3.4
   cloud_firestore: ^5.6.5
   firebase_auth: ^5.5.1
   plugin_platform_interface: ^2.0.1
